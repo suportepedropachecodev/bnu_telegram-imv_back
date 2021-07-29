@@ -10,7 +10,8 @@ const urlalvo =
 async function linkimoveis(lkpesquisa) {
     const dados = [];
     const browser = await puppeteer.launch({
-        defaultViewport: null,
+        args: ['--no-sandbox'],
+        //defaultViewport: null,
     });
     const page = await browser.newPage();
     await page.goto(lkpesquisa);
