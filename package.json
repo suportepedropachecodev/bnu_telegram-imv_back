@@ -1,0 +1,25 @@
+{
+  "name": "bnu_telegram-imv_back",
+  "version": "1.0.0",
+  "description": "App responsavel por extrair dados do olx, backend",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/suportepedropachecodev/bnu_telegram-imv_back.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/suportepedropachecodev/bnu_telegram-imv_back/issues"
+  },
+  "homepage": "https://github.com/suportepedropachecodev/bnu_telegram-imv_back#readme",
+  "dependencies": {
+    "dotenv": "^10.0.0",
+    "mongoose": "^5.13.3",
+    "puppeteer": "^10.1.0"
+  }
+}
