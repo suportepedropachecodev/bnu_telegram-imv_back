@@ -2,14 +2,16 @@
 
 const puppeteer = require('puppeteer');
 
-const urlalvo = 'https://sc.olx.com.br/norte-de-santa-catarina/imoveis/blumenau-apartamento-padrao-itoupava-seca-896470360';
+const urlalvo = 
+"https://sc.olx.com.br/norte-de-santa-catarina/imoveis/apartamento-com-2-dormitorios-a-venda-70-m-por-r-185-000-00-itoupava-central-blumen-835302594";
 
 let detalhesImovel = [];
 
 const wspg = async () => {
 
     const browser = await puppeteer.launch({
-        headless: false,
+        args: ['--no-sandbox'],
+        //headless: false,
     });
     const page = await browser.newPage();
 
