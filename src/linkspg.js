@@ -7,7 +7,7 @@ const urlalvo =
     "https://sc.olx.com.br/norte-de-santa-catarina/regiao-do-vale-do-itajai/blumenau/imoveis/venda/apartamentos";
 
 
-async function linkimoveis(lkpesquisa) {
+async function linkspg(lkpesquisa) {
     const dados = [];
     const browser = await puppeteer.launch({
         args: ['--no-sandbox'],
@@ -26,8 +26,10 @@ async function linkimoveis(lkpesquisa) {
         dados.push(olnk);
     })
 
-    await console.log(dados);
+    //await console.log(dados);
+    return dados
 
 }
 
-linkimoveis(urlalvo);
+//linkimoveis(urlalvo);
+module.exports=linkspg;
