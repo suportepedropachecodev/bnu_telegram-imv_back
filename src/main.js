@@ -31,11 +31,11 @@ const main = async () => {
             detalhesImovel.push(detalhes)
         }
 
-        await console.log({ nome, valor, urlimovel, codigo, detalhesImovel });
-        /*await classImovel.start();
+        //await console.log({ nome, valor, urlimovel, codigo, detalhesImovel });
+        await classImovel.start();
         const dado = { nome, valor, urlimovel, codigo, detalhesImovel };
         await classImovel.add(dado);
-        await classImovel.close();*/
+        await classImovel.close();
     };
     await browser.close();
 }
